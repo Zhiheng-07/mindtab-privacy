@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindTab 隐私权政策</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: #fafafa;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 48px 40px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .updated {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      font-size: 14px;
+      color: #333;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 6px;
+    }
+    li { margin-bottom: 4px; }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MindTab 隐私权政策</h1>
+    <p class="updated">最后更新：2026 年 5 月 28 日</p>
+
+    <h2>1. 数据收集</h2>
+    <p>MindTab 不收集、不传输、不存储用户的个人身份信息。</p>
+
+    <h2>2. 本地存储</h2>
+    <p>所有书签数据（标题、URL、摘要、标签、文件夹）均存储在用户浏览器本地的 IndexedDB 中，不上传至任何服务器。</p>
+
+    <h2>3. AI 服务调用</h2>
+    <p>当用户主动触发收藏或搜索功能时，MindTab 会将页面信息发送至 AI 服务（DeepSeek API）以生成摘要和标签。该过程中：</p>
+    <ul>
+      <li>仅发送页面标题、URL 和有限的正文片段（≤4000 字符）</li>
+      <li>AI 服务不会存储用户的书签数据</li>
+      <li>不会发送用户的浏览历史或其他个人信息</li>
+    </ul>
+
+    <h2>4. 匿名统计（可选）</h2>
+    <p>MindTab 提供可选的匿名使用统计功能，用于改善产品体验。该功能默认开启，用户可随时在设置中关闭。统计数据不包含任何个人身份信息或书签内容。</p>
+
+    <h2>5. 第三方服务</h2>
+    <p>MindTab 使用以下第三方服务：</p>
+    <ul>
+      <li>DeepSeek API — 用于 AI 语义索引和搜索</li>
+      <li>Google Favicon Service — 用于获取网站图标</li>
+    </ul>
+    <p>上述服务仅在用户触发相关功能时按需调用。</p>
+
+    <h2>6. 数据删除</h2>
+    <p>用户可随时通过设置页的"清空所有数据"功能删除全部本地数据。卸载扩展将自动清除所有本地存储。</p>
+
+    <h2>7. 联系方式</h2>
+    <p>如有隐私相关问题，请发送邮件至 <a href="mailto:xu13052071773@gmail.com">xu13052071773@gmail.com</a></p>
+
+    <div class="footer">
+      © 2026 MindTab. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
