@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MindTab 隐私权政策</title>
+  <title>MindTab Privacy Policy</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -60,42 +60,56 @@
 </head>
 <body>
   <div class="container">
-    <h1>MindTab 隐私权政策</h1>
-    <p class="updated">最后更新：2026 年 5 月 28 日</p>
+    <h1>MindTab Privacy Policy</h1>
+    <p class="updated">Last updated: June 7, 2026</p>
 
-    <h2>1. 数据收集</h2>
-    <p>MindTab 不收集、不传输、不存储用户的个人身份信息。</p>
+    <h2>1. Data Collection</h2>
+    <p>MindTab does not collect, transmit, or store any personally identifiable information (PII). We do not track your browsing history, and we do not require account registration.</p>
 
-    <h2>2. 本地存储</h2>
-    <p>所有书签数据（标题、URL、摘要、标签、文件夹）均存储在用户浏览器本地的 IndexedDB 中，不上传至任何服务器。</p>
+    <h2>2. Data Storage</h2>
+    <p>All bookmark data (titles, URLs, summaries, tags, and folders) is stored locally in your browser's IndexedDB and chrome.storage.local. This data never leaves your device except when you explicitly trigger AI-powered features (see Section 3).</p>
 
-    <h2>3. AI 服务调用</h2>
-    <p>当用户主动触发收藏或搜索功能时，MindTab 会将页面信息发送至 AI 服务（DeepSeek API）以生成摘要和标签。该过程中：</p>
+    <h2>3. Data Usage</h2>
+    <p>When you actively trigger the bookmark save or search feature, MindTab sends limited page information to an AI service (DeepSeek API) to generate summaries, tags, and search results. Specifically:</p>
     <ul>
-      <li>仅发送页面标题、URL 和有限的正文片段（≤4000 字符）</li>
-      <li>AI 服务不会存储用户的书签数据</li>
-      <li>不会发送用户的浏览历史或其他个人信息</li>
+      <li>Only the page title, URL, and a limited text excerpt (up to 4,000 characters) are sent</li>
+      <li>Data is sent only when you explicitly initiate a save or search action</li>
+      <li>The AI service processes data in real time and does not store your bookmark data</li>
+      <li>No browsing history, personal information, or other unrelated data is transmitted</li>
     </ul>
 
-    <h2>4. 匿名统计（可选）</h2>
-    <p>MindTab 提供可选的匿名使用统计功能，用于改善产品体验。该功能默认开启，用户可随时在设置中关闭。统计数据不包含任何个人身份信息或书签内容。</p>
-
-    <h2>5. 第三方服务</h2>
-    <p>MindTab 使用以下第三方服务：</p>
+    <h2>4. Data Sharing</h2>
+    <p>MindTab does not sell, trade, or rent your personal data to any third party. Data is shared with third-party services only as described below, and solely to provide core product functionality:</p>
     <ul>
-      <li>DeepSeek API — 用于 AI 语义索引和搜索</li>
-      <li>Google Favicon Service — 用于获取网站图标</li>
+      <li><strong>DeepSeek API</strong> — receives page title, URL, and text excerpt when you trigger AI indexing or search</li>
+      <li><strong>Google Favicon Service</strong> — receives website domain names to fetch site icons for display purposes</li>
     </ul>
-    <p>上述服务仅在用户触发相关功能时按需调用。</p>
+    <p>No data is shared for advertising, analytics, or any purpose beyond the functionality described above.</p>
 
-    <h2>6. 数据删除</h2>
-    <p>用户可随时通过设置页的"清空所有数据"功能删除全部本地数据。卸载扩展将自动清除所有本地存储。</p>
+    <h2>5. Data Retention</h2>
+    <p>All bookmark data is stored locally on your device for as long as you choose to keep it. MindTab does not retain any data on remote servers. Data sent to the AI service for processing is used in real time and is not stored by the service after the response is returned.</p>
 
-    <h2>7. 联系方式</h2>
-    <p>如有隐私相关问题，请发送邮件至 <a href="mailto:xu13052071773@gmail.com">xu13052071773@gmail.com</a></p>
+    <h2>6. Data Deletion</h2>
+    <p>You can delete your data at any time through the following methods:</p>
+    <ul>
+      <li>Use the "Clear All Data" option in MindTab's Settings page to remove all local bookmark data</li>
+      <li>Uninstall the MindTab extension, which automatically removes all locally stored data</li>
+    </ul>
+
+    <h2>7. Security</h2>
+    <p>All communications between MindTab and external services are encrypted using HTTPS. Your bookmark data is stored locally using browser-native storage APIs (IndexedDB and chrome.storage) which are sandboxed and accessible only to the MindTab extension.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>MindTab is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last updated" date at the top of this page. We encourage you to review this page periodically. Continued use of MindTab after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:xu13052071773@gmail.com">xu13052071773@gmail.com</a>.</p>
 
     <div class="footer">
-      © 2026 MindTab. All rights reserved.
+      &copy; 2026 MindTab. All rights reserved.
     </div>
   </div>
 </body>
