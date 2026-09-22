@@ -61,7 +61,7 @@
 <body>
   <div class="container">
     <h1>MindTab Privacy Policy</h1>
-    <p class="updated">Last updated: June 7, 2026</p>
+    <p class="updated">Last updated: September 22, 2026</p>
 
     <h2>1. Data Collection</h2>
     <p>MindTab does not collect, transmit, or store any personally identifiable information (PII). We do not track your browsing history, and we do not require account registration.</p>
@@ -70,24 +70,25 @@
     <p>All bookmark data (titles, URLs, summaries, tags, and folders) is stored locally in your browser's IndexedDB and chrome.storage.local. This data never leaves your device except when you explicitly trigger AI-powered features (see Section 3).</p>
 
     <h2>3. Data Usage</h2>
-    <p>When you actively trigger the bookmark save or search feature, MindTab sends limited page information to an AI service (DeepSeek API) to generate summaries, tags, and search results. Specifically:</p>
+    <p>When you actively trigger the bookmark save or search feature, MindTab sends limited page information <strong>directly to the AI provider you have configured yourself</strong> (such as DeepSeek, OpenAI, Kimi, or a custom OpenAI-compatible endpoint) to generate summaries, tags, and search results. MindTab does not operate any relay or intermediary server — requests go straight from your browser to your chosen provider. Specifically:</p>
     <ul>
       <li>Only the page title, URL, and a limited text excerpt (up to 4,000 characters) are sent</li>
       <li>Data is sent only when you explicitly initiate a save or search action</li>
-      <li>The AI service processes data in real time and does not store your bookmark data</li>
+      <li>Your API key is stored only in your local browser (chrome.storage.local) and is transmitted only to the provider you configured, never to MindTab or anyone else</li>
+      <li>How the provider processes and retains this data is governed by that provider's own privacy policy</li>
       <li>No browsing history, personal information, or other unrelated data is transmitted</li>
     </ul>
 
     <h2>4. Data Sharing</h2>
     <p>MindTab does not sell, trade, or rent your personal data to any third party. Data is shared with third-party services only as described below, and solely to provide core product functionality:</p>
     <ul>
-      <li><strong>DeepSeek API</strong> — receives page title, URL, and text excerpt when you trigger AI indexing or search</li>
-      <li><strong>Google Favicon Service</strong> — receives website domain names to fetch site icons for display purposes</li>
+      <li><strong>Your configured AI provider</strong> — receives page title, URL, and text excerpt when you trigger AI indexing or search; you choose this provider and supply your own API key</li>
+      <li><strong>Public favicon service</strong> — receives website domain names to fetch site icons for display purposes</li>
     </ul>
     <p>No data is shared for advertising, analytics, or any purpose beyond the functionality described above.</p>
 
     <h2>5. Data Retention</h2>
-    <p>All bookmark data is stored locally on your device for as long as you choose to keep it. MindTab does not retain any data on remote servers. Data sent to the AI service for processing is used in real time and is not stored by the service after the response is returned.</p>
+    <p>All bookmark data is stored locally on your device for as long as you choose to keep it. MindTab does not retain any data on remote servers. Data sent to your configured AI provider is used to produce the response; its handling and retention are subject to that provider's own policies.</p>
 
     <h2>6. Data Deletion</h2>
     <p>You can delete your data at any time through the following methods:</p>
